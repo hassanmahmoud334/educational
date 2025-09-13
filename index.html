@@ -109,9 +109,18 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             height: 100%;
             border-radius: 15px;
+            width: 90%;
             overflow: hidden;
+            position: relative;
+            
         }
-        
+        .category-card .btnExplore {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 1rem;
+            bottom: 0;
+        }
         .category-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 35px rgba(0,0,0,0.15);
@@ -395,7 +404,7 @@
         <div class="container text-center hero-content">
             <h1 class="hero-title">Learn Without Limits</h1>
             <p class="hero-subtitle">Start, switch, or advance your career with 7,000+ courses, Professional Certificates, and degrees from world-class universities and companies.</p>
-            <a href="#" class="btn btn-light btn-hero me-2">Browse Courses</a>
+            <a href="#" class="btn btn-light btn-hero me-2 mb-2">Browse Courses</a>
             <a href="#" class="btn btn-outline-light btn-hero">Become an Instructor</a>
         </div>
     </section>
@@ -435,28 +444,35 @@
         <div class="container">
             <h2 class="section-title">Explore Popular Categories</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="category-card card p-5 text-center">
                         <i class="bi bi-code-slash category-icon"></i>
                         <h4>Programming & Development</h4>
                         <p>Python, Web Development, Data Science, AWS Certification, and more</p>
-                        <a href="#" class="btn btn-link text-primary text-decoration-none mt-3">Explore <i class="bi bi-arrow-right"></i></a>
+                        <div class="btnExplore">
+                            <a href="#" class="btn btn-link text-primary text-decoration-none mt-3">Explore <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="category-card card p-5 text-center">
                         <i class="bi bi-palette category-icon"></i>
                         <h4>Design & Creative</h4>
                         <p>Graphic Design, UX Design, Photography, Blender, and more</p>
-                        <a href="#" class="btn btn-link text-primary text-decoration-none mt-3">Explore <i class="bi bi-arrow-right"></i></a>
+                        <div class="btnExplore">
+                            <a href="#" class="btn btn-link text-primary text-decoration-none mt-3">Explore <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-4">
                     <div class="category-card card p-5 text-center">
                         <i class="bi bi-graph-up category-icon"></i>
                         <h4>Business & Marketing</h4>
                         <p>Financial Analysis, Digital Marketing, SQL, PMP, and more</p>
-                        <a href="#" class="btn btn-link text-primary text-decoration-none mt-3">Explore <i class="bi bi-arrow-right"></i></a>
+                        <div class="btnExplore">
+                            <a href="#" class="btn btn-link text-primary text-decoration-none mt-3">Explore <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
